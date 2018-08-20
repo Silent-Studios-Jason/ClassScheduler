@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.silentstudiosmediagroup.classscheduler.TermActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/activity_term">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Term Name"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/startEditBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Start Date"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/endEditBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="End Date"
+                android:inputType="date" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="11dp"
+            android:text="@string/terms_header"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="134dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/term_instructions"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+        <ListView
+            android:id="@+id/termList"
+            android:layout_width="match_parent"
+            android:layout_height="248dp"
+
+            android:focusableInTouchMode="false"
+            android:isScrollContainer="false"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="219dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addTermBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/add_term"
+                android:textSize="@dimen/button_font_size"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="458dp" />
+
+            <Button
+                android:id="@+id/deleteTermBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/delete_term"
+                android:textSize="@dimen/button_font_size"
+                tools:layout_editor_absoluteX="219dp"
+                tools:layout_editor_absoluteY="458dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

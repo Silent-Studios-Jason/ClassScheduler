@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.silentstudiosmediagroup.classscheduler.CourseDetailsActivity"
+    tools:showIn="@layout/activity_course_details">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--tools:layout_editor_absoluteY="75dp">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/courseLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/courseNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Course Name"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/course_name_textsize" />
+
+            <TextView
+                android:id="@+id/termLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Term"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/termText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Term"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/startEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Start Date"
+                    android:inputType="date" />
+
+                <EditText
+                    android:id="@+id/endEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="End Date"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/objCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Objective" />
+
+            <CheckBox
+                android:id="@+id/assessmentCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assessment" />
+
+            <CheckBox
+                android:id="@+id/notifyCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification" />
+
+            <TextView
+                android:id="@+id/noteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/addNotesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onButtonsClick"
+                android:text="Add Notes" />
+
+            <ListView
+                android:id="@+id/noteList"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/mentorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mentors"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/mentorList"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    <!--</ScrollView>-->
+
+</android.support.constraint.ConstraintLayout>

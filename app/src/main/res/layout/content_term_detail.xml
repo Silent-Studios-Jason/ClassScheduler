@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.silentstudiosmediagroup.classscheduler.TermDetailActivity"
+    tools:showIn="@layout/activity_term_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/termNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/term_name_hint"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="@dimen/bottom_list_margin"
+            android:layout_marginTop="@dimen/top_list_margin"/>
+
+        <EditText
+            android:id="@+id/startTermEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/term_start_hint"
+            android:inputType="date"
+            android:layout_marginBottom="@dimen/bottom_list_margin"/>
+
+        <EditText
+            android:id="@+id/endTermEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/term_end_hint"
+            android:inputType="date"
+            android:layout_marginBottom="@dimen/bottom_list_margin"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_courses"
+            android:textSize="18sp"
+            android:layout_marginBottom="@dimen/bottom_list_margin"/>
+
+        <ListView
+            android:id="@+id/addCourseList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

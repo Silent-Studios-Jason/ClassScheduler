@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Class Scheduler</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="courses">Courses</string>
+    <string name="terms">Terms</string>
+    <string name="assessments">Assessments</string>
+    <string name="notes">Notes</string>
+    <string name="title_activity_course">Courses</string>
+    <string name="title_activity_courses">Courses</string>
+    <string name="class_scheduler">Class Scheduler</string>
+    <string name="silentstudios_mediagroup_gmail_com">SilentStudios.MediaGroup@gmail.com</string>
+    <string name="my_terms">My Terms</string>
+    <string name="my_courses">My Courses</string>
+    <string name="mentors">Mentors</string>
+    <string-array name="courses">
+        <item>Math 101</item>
+        <item>Intro to Computer Science</item>
+        <item>Biology</item>
+        <item>Web Development</item>
+        <item>Cisco III</item>
+        <item>Geology</item>
+        <item>Networking I</item>
+        <item>Zoology</item>
+        <item>English</item>
+        <item>Spanish</item>
+        <item>History</item>
+        <item>Oral Communication</item>
+        <item>Pottery</item>
+        <item>Business</item>
+        <item>Cooking and cutlery II</item>
+        <item>Mobile Application Development</item>
+        <item>Client Server Application Development</item>
+        <item>Programming II</item>
+        <item>Advanced Java</item>
+        <item>Logic</item>
+        <item>Data Management</item>
+        <item>Data Structures</item>
+        <item>Operating Systems</item>
+        <item>Technical Writing</item>
+        <item>Software II</item>
+    </string-array>
+    <string name="title_activity_mentors">Mentors</string>
+    <string name="title_activity_add_edit">Mentor Details</string>
+    <string name="name_hint">Name</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="title_activity_mentor">Mentors</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">phone</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="title_activity_term">Terms</string>
+    <string name="add_term">Add Term</string>
+    <string name="delete_term">Delete Term</string>
+    <string name="title_activity_term_details">Term Details</string>
+    <string name="term_instructions">Select a term to view or add courses</string>
+    <string name="terms_header">Terms</string>
+    <string name="select_courses">Select course to view or delete</string>
+    <string name="term_end_hint">Term End</string>
+    <string name="term_start_hint">Term Start</string>
+    <string name="term_name_hint">Term Name</string>
+    <string name="title_activity_term_detail">Term Details</string>
+    <string name="title_activity_course_details">Course Details</string>
+    <string name="title_activity_note">Notes</string>
+    <string name="title_activity_all_notes">My Notes</string>
+    <string name="title_activity_view_note_summary">Note Details</string>
+    <string name="title_activity_add_new_course">Add Course</string>
+    <string name="title_activity_my_courses">My Courses</string>
+
+</resources>
